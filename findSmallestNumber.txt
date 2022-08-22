@@ -1,0 +1,14 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main()
+    {
+        
+        Console.Write("Enter the Two Number: ");
+        int a = int.Parse(Console.ReadLine());
+        int b = int.Parse(Console.ReadLine());
+        Console.WriteLine(a<b?a + " is the Smallest":b + " is the Smallest Number");
+        
+    }
+}

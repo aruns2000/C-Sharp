@@ -1,0 +1,16 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main()
+    {
+        Console.Write("Enter the First Number: ");
+        int a = int.Parse(Console.ReadLine());
+        Console.Write("Enter the Second Number: ");
+        int b = int.Parse(Console.ReadLine());
+        Console.Write("Enter the Third Number: ");
+        int c = int.Parse(Console.ReadLine());
+        Console.WriteLine("The Multiplication of Three Number Is: " + (a*b*c));
+        
+    }
+}
