@@ -1,0 +1,30 @@
+
+
+
+using System;
+
+public class Prime
+{
+    public static void Main()
+    {
+        Console.Write("Enter the number :");
+        int number = int.Parse(Console.ReadLine());
+        bool ans = isPrime(number);
+        Console.WriteLine(ans);
+        
+    }
+    public static bool isPrime(int number){
+        if(number <= 1)
+        {
+            return false;
+        }
+        int c = 2;
+        while(c*c <= number){
+            if(number % c == 0){
+                return false;
+            }
+            c++;
+        }
+        return c*c>number;
+    }
+}
